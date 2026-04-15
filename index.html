@@ -555,7 +555,7 @@
   </div>
 
   <script>
-    const APP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwd2EFTEBKfG3Y8JvkVsX-3JqOOWAd_RYkqg0cCxHEsHTK3TkUFHTVLIk8yWki5wwA/exec";
+    const APP_SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
 
     const SCALE = [
       { value: 1, label: "Not at all" },
@@ -803,6 +803,7 @@ function renderLens(stepIndex) {
         <div class="${badgeClass(lens.group)}">${escapeHtml(lens.group)}</div>
         <h2>Lens ${lens.id}: ${escapeHtml(lens.name)}</h2>
         <p class="lens-description">${escapeHtml(lens.description)}</p>
+        <p class="scale-inline">Scale: 1 = Not at all, 2 = Slightly, 3 = Moderately, 4 = Significantly, 5 = Extremely</p>
 
         ${qMap.map(([key, label]) => `
           <section class="question-block">
@@ -934,7 +935,7 @@ function renderLens(stepIndex) {
           <div class="badge">Complete</div>
           <h1>Thank you</h1>
           <p>Your responses have been submitted successfully.</p>
-          <p class="muted">Thank you for contributing to this work. You can explore our work in this space on our <a href="https://www.thinkingaheadinstitute.org/research-papers/technology-and-ai-hub/" target="_blank" rel="noopener noreferrer">Technology and AI Hub</a>.</p>
+          <p class="muted">Thank you for contributing to this work. You can find out more about AI on our <a href="https://www.thinkingaheadinstitute.org/research-papers/technology-and-ai-hub/" target="_blank" rel="noopener noreferrer">Technology and AI Hub</a>.</p>
           <p class="muted">You may now close this page.</p>
         </div>
       `;
