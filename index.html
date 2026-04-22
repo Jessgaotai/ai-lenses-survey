@@ -958,7 +958,7 @@ function renderLens(stepIndex) {
       responses.meta.completed_at = new Date().toISOString();
       responses.meta.timezone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
 
-      if (!APP_SCRIPT_URL || APP_SCRIPT_URL.includes("https://script.google.com/macros/s/AKfycbwd2EFTEBKfG3Y8JvkVsX-3JqOOWAd_RYkqg0cCxHEsHTK3TkUFHTVLIk8yWki5wwA/exec")) {
+      if (!APP_SCRIPT_URL || APP_SCRIPT_URL.includes("PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE")) {
         showStatus("Add your Google Apps Script web app URL in the HTML file before publishing.", true);
         return;
       }
